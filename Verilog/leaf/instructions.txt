@@ -1,0 +1,23 @@
+AUIPC, x6, uiim_20
+JALR, x0, x6, 28
+ADD, x5, x10, x11
+ADD, x6, x12, x13
+SUB, x20, x5, x6
+ADDI, x10, x20, 0
+JALR, x0, x1, 0
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 72
+LW, x10, x5, 0
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 64
+LW, x11, x5, 0
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 56
+LW, x12, x5, 0
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 48
+LW, x13, x5, 0
+JAL, x1
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 32
+SW, x10, x5, 10

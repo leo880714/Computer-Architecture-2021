@@ -1,0 +1,25 @@
+AUIPC, x6, uiim_20
+JALR, x0, x6, 72
+ADDI, x2, x2, 4088
+SW, x1, x2, 1
+SW, x10, x2, 10
+SLTI, x5, x10, 1
+BEQ, x5, x0, siim_13
+ADDI, x10, x0, 1
+ADDI, x2, x2, 8
+JALR, x0, x1, 0
+ADDI, x10, x10, 4095
+JAL, x1
+ADDI, x6, x10, 0
+LW, x10, x2, 0
+LW, x1, x2, 4
+ADDI, x2, x2, 8
+
+JALR, x0, x1, 0
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 36
+LW, x10, x5, 0
+JAL, x1
+AUIPC, x5, uiim_20
+ADDI, x5, x5, 20
+SW, x10, x5, 10
